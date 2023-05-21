@@ -28,7 +28,7 @@ sh installation.sh
 php artisan migrate
 ```
 
-#### 日記のテストデータ登録
+#### テストデータ登録
 ```
 php artisan db:seed
 ```
