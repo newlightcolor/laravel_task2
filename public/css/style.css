@@ -1,0 +1,123 @@
+header {
+  margin: 20px;
+  text-align: center;
+}
+
+body {
+  color: #444;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.btn-default {
+  border: solid 1px #777;
+}
+
+.create-task-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 50px;
+  bottom: 50px;
+  background-color: #777;
+  border-radius: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+.create-task-button:hover {
+  box-shadow: 5px 5px 7px -2px #777;
+  -webkit-box-shadow: 5px 5px 7px -2px #777;
+  transition: 0.5s;
+}
+.create-task-button span {
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  color: #FFF;
+}
+
+.task-container {
+  width: 80%;
+  margin: auto;
+}
+.task-container .th-timestamp {
+  width: 180px;
+}
+.task-container .th-tags {
+  width: 120px;
+}
+.task-container .th-actions {
+  width: 100px;
+}
+.task-container .search-task {
+  cursor: pointer;
+}
+.task-container tbody .tags-wrapper {
+  position: relative;
+  width: 120px;
+  height: 30px;
+  overflow: hidden;
+}
+.task-container tbody .tags-wrapper .tag-tooltip {
+  display: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+.task-container tbody .tags-wrapper .tag-tooltip span {
+  position: static;
+  word-break: break-all;
+  white-space: nowrap;
+  transition: 5s;
+  cursor: pointer;
+}
+.task-container tbody .tags-wrapper:hover {
+  overflow: visible;
+}
+.task-container tbody .tags-wrapper:hover .tag-tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 200px;
+  width: 300px;
+  overflow: scroll;
+}
+.task-container tbody .btn {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.task-container tbody .btn:hover {
+  background: #777;
+  color: #fff;
+}
+.task-container tbody .btn span {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#modal-task-create .modal-body .tag-wrapper, #modal-task-edit .modal-body .tag-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+#modal-task-create .modal-body .task-datetimepicker, #modal-task-edit .modal-body .task-datetimepicker {
+  cursor: pointer;
+}
+#modal-task-create .modal-body .tag-content, #modal-task-edit .modal-body .tag-content {
+  color: #777;
+  cursor: pointer;
+}
+#modal-task-create .modal-body .tag-content-active, #modal-task-edit .modal-body .tag-content-active {
+  color: #fff !important;
+}/*# sourceMappingURL=style.css.map */

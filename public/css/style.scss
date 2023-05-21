@@ -1,0 +1,131 @@
+header {
+    margin: 20px;
+    text-align: center;
+}
+
+body {
+    color: #444;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.btn-default {
+    border: solid 1px #777;
+}
+
+.create-task-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    bottom: 50px;
+    background-color: #777;
+    border-radius: 100px;
+    padding: 20px;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 5px 5px 7px -2px #777;
+        -webkit-box-shadow: 5px 5px 7px -2px #777;
+        transition: 0.5s;
+    }
+    span {
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+        color: #FFF;
+    }
+}
+
+.task-container {
+    width: 80%;
+    margin: auto;
+    .th-timestamp {
+        width: 180px;
+    }
+    .th-tags {
+        width: 120px;
+    }
+    .th-actions {
+        width: 100px;
+    }
+    .search-task {
+        cursor: pointer;
+    }
+    tbody {
+        .tags-wrapper {
+            position: relative;
+            width: 120px;
+            height: 30px;
+            overflow: hidden;
+            .tag-tooltip {
+                display: none;
+                padding: 10px;
+                border-radius: 3px;
+                span {
+                    position: static;
+                    word-break: break-all;
+                    white-space: nowrap;
+                    transition: 5s;
+                    cursor: pointer;
+                }
+            }
+            &:hover {
+                overflow: visible;
+                .tag-tooltip {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    height: 200px;
+                    width: 300px;
+                    overflow: scroll;
+                }
+            }
+
+        }
+        .btn {
+            padding: 5px;
+            width: 40px;
+            height: 40px;
+            &:hover {
+                background: #777;
+                color: #fff;
+            }
+
+            position: relative;
+            span {
+                position: absolute;
+                height: 24px;
+                width: 24px;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+#modal-task-create, #modal-task-edit {
+    .modal-body {
+        .tag-wrapper {
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+        .task-datetimepicker {
+            cursor: pointer;
+        }
+        .tag-content {
+            color: #777;
+            cursor: pointer;
+        }
+        .tag-content-active {
+            color: #fff !important;
+        }
+    }
+}

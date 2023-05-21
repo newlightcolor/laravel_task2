@@ -15,12 +15,10 @@ return new class extends Migration
             $table->id();
             $table->text('content');
             $table->timestamp('deadline_at')->nullable(true);
-            $table->integer('priority')->default(0);
             $table->integer('parent_task_id')->nullable(true);
             $table->timestamps();
 
             $table->index('deadline_at');
-            $table->index('priority');
             $table->index('parent_task_id');
         });
     }
